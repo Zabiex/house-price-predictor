@@ -73,5 +73,5 @@ jobs:
         with:
           push: true
           tags: |
-            ${{ secrets.DOCKER_USERNAME }}/fastapi:${{ github.sha }}
-          context: .
+            ${{ vars.DOCKER_USERNAME }}/fastapi:${{ github.sha }}
+          context: "."
